@@ -10,7 +10,7 @@ from aiogram import Router
 import logging
 
 
-logging.basicConfig(level=logging.INFO, format='%Y-%m-%d %H:%M:%S - %levelname - %message')
+logging.basicConfig(level=logging.INFO, format=f'{datetime.datetime.now():%Y-%m-%d %H:%M:%S} - %(levelname)s - %(message)s')
 
 
 load_dotenv()
